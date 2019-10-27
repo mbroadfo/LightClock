@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html><head>
+	<meta http-equiv=Content-Type content='text/html; charset=utf-8' />
+	<meta name=viewport content='width=device-width, initial-scale=1.0'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+	<script src='http://thelightclock.com/clockjshosting/Colour.js'></script>
+	<script src='http://thelightclock.com/clockjshosting/spectrum.js'></script>
+	<script src=clock.js></script>
+	<link rel=stylesheet href='http://thelightclock.com/clockjshosting/spectrum.css'>
+	<link rel=stylesheet href=style.css>
+	<style type='text/css'>
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3240ff+0,d6d6d6+50,eeff00+100 */
+	.scheme1{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff832+0,0026ff+100 */
+	background: #fff832; /* Old browsers */
+	background: -moz-linear-gradient(left,  #fff832 0%, #0026ff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fff832), color-stop(100%,#0026ff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #fff832 0%,#0026ff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #fff832 0%,#0026ff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #fff832 0%,#0026ff 100%); /* IE10+ */
+	background: linear-gradient(to right,  #fff832 0%,#0026ff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff832', endColorstr='#0026ff',GradientType=1 ); /* IE6-9 */
+	}
+	.scheme2{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,0026ff+100 */
+	background: #ff3232; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ff3232 0%, #0026ff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff3232), color-stop(100%,#0026ff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ff3232 0%,#0026ff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ff3232 0%,#0026ff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ff3232 0%,#0026ff 100%); /* IE10+ */
+	background: linear-gradient(to right,  #ff3232 0%,#0026ff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#0026ff',GradientType=1 ); /* IE6-9 */
+	}
+	.scheme3{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,eeff00+100 */
+	background: #ff3232; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ff3232 0%, #eeff00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff3232), color-stop(100%,#eeff00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ff3232 0%,#eeff00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ff3232 0%,#eeff00 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ff3232 0%,#eeff00 100%); /* IE10+ */
+	background: linear-gradient(to right,  #ff3232 0%,#eeff00 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#eeff00',GradientType=1 ); /* IE6-9 */
+	}
+	</style>
+</head>
+<body class=settings-page>
+
+	<div id='canvasholder'>
+		<canvas id='canvas'></canvas>
+	</div>
+	<form action=/ method=GET>
+		<div class="color-section">
+			<div class="color-box">
+				<label>Hour Colour</label>
+				<input type='text' name = 'hourcolorspectrum' id='hourcolorspectrum' value='#ff0000'/>
+				<input type='hidden' name = 'hourcolor' id = 'hourcolor' value = '#ff0000'>
+			</div>
+			<div class="color-box">
+				<label>Minute Colour</label>
+				<input type='text' name='minutecolorspectrum' id='minutecolorspectrum' value='#0000FF'/>
+				<input type='hidden' name = 'minutecolor' id = 'minutecolor' value = '#0000ff'>
+			</div>	
+		</div>
+		<div class="slide-section">
+			<div class="point-slide">
+				<label>Blend Point</label>
+				<input type='range' id= 'blendpoint' name='blendpoint' >
+			</div>
+			<div class="point-slide">
+				<label>Dimming</label>
+				<input type='range' id= 'dimming' name='dimming' >
+			</div>
+		</div>
+		<div class="btn-box">
+			<input class='btn btn-sm' type='submit' name='submit' value='Save Scheme 1' />
+			<input class='btn btn-sm' type='submit' name='submit' value='Save Scheme 2' />
+			<input class='btn btn-sm' type='submit' name='submit' value='Save Scheme 3' />
+		</div>
+		<div class="btn-box">
+			<input class='btn btn-sm' type='submit' name='submit' value='Load Scheme 1' />
+			<input class='btn btn-sm' type='submit' name='submit' value='Load Scheme 2' />
+			<input class='btn btn-sm' type='submit' name='submit' value='Load Scheme 3' />
+		</div>
+
+		<div class="btn-footer">
+			<a class="btn btn-default" href=/settings>Settings</a>
+			<input class='btn btn-green' type=submit name=submit value='Update The Light Clock'/>
+		</div>
+	</form>
+
+</body>
+</html>

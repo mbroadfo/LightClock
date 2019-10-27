@@ -1,0 +1,36 @@
+memory usage:
+
+added version 1: (magic byte = 196)
+0-31: ssid
+32-95: password
+100-124: face1
+125-149: face2
+150-174: face3
+
+175-176: lat
+177-178: long
+179: timezone
+180: random mode
+181: hour marks
+182: sleep
+183: sleepmin
+184: showseconds
+185: DSTauto
+186: webMode
+187-188: timezone
+189: wake
+190: wakemin
+191: brightness
+192: DSTtime
+193: hourofdeath
+194: minuteofdeath
+195-227: clockname
+
+added version 1.1: (magic byte = 2)
+228: sleeptype
+229: dawnbreak
+230: pixelCount
+231: maxBrightness
+
+
+509-511: magic first-boot byte c4
